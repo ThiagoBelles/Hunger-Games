@@ -3,6 +3,7 @@ let modalContent = document.getElementById('modal-content');  // <- Seleciona o 
 
 
 function openModal(img){                              // Função de abrir o Modal 
+    if(window.innerWidth < 430) {return};
     modal.style.visibility = 'visible'
     modalContent.src = img
 }
