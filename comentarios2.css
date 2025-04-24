@@ -22,6 +22,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    column-gap: 5px;
    border-top: 2px solid #f7a223;
    border-bottom: 2px solid #f7a223;       
    border-radius: 7px;
@@ -38,12 +39,13 @@ header {
     display:flex;
     width: 100%;
     justify-content:space-around;
+    column-gap: 5px;
 }
 
 .li-2 {
     color:aliceblue;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 21px;
     transition: 0.5;
     font-family: 'Rajdhani', sans-serif;
     font-weight:600;
@@ -67,8 +69,8 @@ header {
 
 .coment-container-box {    
     height: 100%;
-    width: 90%;
-    max-width: 90%;
+    width: 96%;
+    max-width: 99%;
     max-height: 694px;
     background-color: transparent;
     position: absolute;    
@@ -91,10 +93,14 @@ header {
 
 .card-coment-box {
     width: 100%;
+    max-width: 512px;
+    min-width: 290px;
     border-radius: 10px;
     background-color: transparent;
     display: flex;
     flex-direction: column;
+
+    border: 1px solid rgba(247, 249, 104, 0.316);
 }
  
 #first {
@@ -134,7 +140,7 @@ header {
 }
 
 .nome-perfil {
-    font-size: 24px;
+    font-size: 20px;
     color: rgba(255, 255, 255, 0.795);
     font-family: "Kanit", sans-serif;
     font-weight: 400;
@@ -143,7 +149,7 @@ header {
 }
 
 .inf {
-    font-size: 14px;
+    font-size: 12px;
     color: rgba(194, 192, 192, 0.795);
     font-family: "Kanit", sans-serif;
     font-weight: 400;
@@ -268,7 +274,23 @@ spam {
     color: #f7a223;
 }
 
+@media(min-width: 370px) {
+    .li-2 {
+        font-size: 24px;
+    }
+
+    .inf {
+        font-size: 14px;
+    }
+
+    .nome-perfil {
+        font-size: 24px;
+    }
+}
+
 @media(min-width: 776px) {
+
+
     .nav {
         display: block;
         width:60%;
@@ -300,6 +322,7 @@ spam {
 
     .card-coment-box {
         width: 70%;
+        min-width: 510px;
         border-radius: 10px;
         background-color: transparent;
         display: flex;

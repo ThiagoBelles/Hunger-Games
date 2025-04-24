@@ -11,4 +11,3 @@ function openModal(img){                              // Função de abrir o Mod
 function hideModal(){                              // Função de esconder o Modal
     modal.style.visibility = 'hidden'
 }
-
